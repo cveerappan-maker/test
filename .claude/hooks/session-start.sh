@@ -7,4 +7,4 @@ if [ "${CLAUDE_CODE_REMOTE:-}" != "true" ]; then
 fi
 
 # Install Python dependencies
-pip install -r "$CLAUDE_PROJECT_DIR/requirements.txt"
+pip install --ignore-installed -r "$CLAUDE_PROJECT_DIR/requirements.txt"
